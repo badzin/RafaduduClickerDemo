@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>CachorroClicker</title>
+        <title>Rafa</title>
     </head>
 
     <body>
@@ -50,7 +50,7 @@
     <!DOCTYPE html>
 <html>
 <head>
-    <title>0 Robux No Cachorro Clicker</title>
+    <title>0 Robux No Rafa</title>
 </head>
 
 <style>
@@ -84,7 +84,7 @@
             </div>
             <br>
             <div class="wasdContainer">
-                <img src="imagensaqui/imagemDoBiscoito.png" height="256px" width="256px" onclick="cachorroClick(sla)">
+                <img src="imagensaqui/imagemDoBiscoito.png" height="256px" width="256px" onclick="FuncaoMerda(sla)">
             </div>
         </center>
     </div>
@@ -108,7 +108,7 @@
         var precoDoAuto = 15;
         var ValorAuto = 0;
 
-        function cachorroClick() {
+        function FuncaoMerda() {
             Robux++;
             document.getElementById("Robux").innerHTML = Robux;
         }
@@ -118,7 +118,7 @@
     Robux += ValorVo * 5;
     Robux += ValorAuto;
 
-    document.title = Robux + " Robux no Cachorro Clicker"
+    document.title = Robux + " Robux no Rafa"
 }, 400);
 
           
