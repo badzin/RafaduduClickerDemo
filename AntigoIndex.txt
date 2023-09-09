@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>CachorroClicker</title>
+    </head>
+
+    <body>
+        <P>Robux: <span id="Robux">0</span></P>
+        <img src="imagensaqui/imagemDoBiscoito.png" height="256px" width="256px" onclick="sam">
+
+        <button onclick="comprarauto">Cursor </span id="precodoauto">15</span> <span id="ValorAuto">0</span></button>
+        <script>
+            var Robux = 0;
+
+            var precodoauto = 15;
+            var ValorAuto = 0;
+
+
+
+            function comprarauto() {
+                if (Robux >= precodoauto) {
+                    Robux = Robux - precodoauto;
+                    ValorAuto = ValorAuto + 1;
+                    precodoauto = Math.round(precodoauto * 1.15);
+
+
+
+
+
+                    document.getElementById("Robux").innerHTML = Robux;
+                    document.getElementById("precodoauto").innerHTML = precodoauto;
+                    document.getElementById("ValorAuto").innerHTML = ValorAuto;
+                }
+            }
+        </script>
+</html>
+
+
+
+<button onclick="comprarAuto()">Comprar AutoClicker: <span id="precoDoAuto">15 </span> <span id="ValorAuto">0 </span></button>
+    <button onclick="comprarAuto2()">Comprar a sua Vó: <span id="precoDaVo">200</span> <span id="ValorVo">0</span></button>
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>0 Robux No Cachorro Clicker</title>
+</head>
+
+<style>
+    .GuiLadoDireito {
+        float: left;
+        width: 80%;
+    }
+    .GuiLadoEsquerdo {
+        float: right;
+        width: 20%;
+    }
+    .GuiContainer { 
+     background-color: rgb(225, 222, 245);
+     width: 50%
+    }
+    .wasdContainer {
+        position: relative;
+        transition: all .7s ease-in-out
+    }
+    .wasdContainer img:hover { transform: scale(1.08); }
+    .wasdContainer img:active{ transform: scale(0.99); }
+</style>
+
+
+<body>
+    <div class="GuiLadoDireito">
+        <center>
+            <div class="GuiContainer">
+                <span id="Robux">0</span> Robux💸<br>
+                 <span id="robuxporhora">0</span> Robux por Segundo ⚡
+            </div>
+            <br>
+            <div class="wasdContainer">
+                <img src="imagensaqui/imagemDoBiscoito.png" height="256px" width="256px" onclick="cachorroClick(sla)">
+            </div>
+        </center>
+    </div>
+
+    <div class="GuiLadoEsquerdo">
+        <table class="shoppe" onclick="comprarAuto">
+            <tr>
+                <td id="image"><img src="imagensaqui/algo.png"></td>
+                <td id="nomeeopreco">
+                    <p>AutoClicker</p>
+                    <p><span id="precoDoAuto">15</span> robux</p>
+            </tr>
+            <td id="umnomelegal"><span id="ValorAuto">0</span></td>
+    </div>
+
+    <script>
+        var Robux = 0;
+        var sla = 2;
+        var precoDaVo = 1;
+        var ValorVo = 0;
+        var precoDoAuto = 15;
+        var ValorAuto = 0;
+
+        function cachorroClick() {
+            Robux++;
+            document.getElementById("Robux").innerHTML = Robux;
+        }
+
+        setInterval(function() {
+    document.getElementById("Robux").innerHTML = Robux;
+    Robux += ValorVo * 5;
+    Robux += ValorAuto;
+
+    document.title = Robux + " Robux no Cachorro Clicker"
+}, 400);
+
+          
+        
+
+        function comprarAuto() {
+            if (Robux >= precoDoAuto) {
+                Robux -= precoDoAuto;
+                ValorAuto++;
+                precoDoAuto = Math.round(precoDoAuto * 1.15);
+
+                document.getElementById("Robux").innerHTML = Robux;
+                document.getElementById("precoDoAuto").innerHTML = precoDoAuto;
+                document.getElementById("ValorAuto").innerHTML = ValorAuto;
+                updaterobuxporhora();
+            }
+        }
+
+        function updaterobuxporhora() {
+            robuxporhora = ValorAuto + ValorVo * 5;
+            document.getElementById("robuxporhora").innerHTML = robuxporhora;
+        }
+
+        function comprarAuto2() {
+            if (Robux >= precoDaVo) {
+                Robux -= precoDaVo;
+                ValorVo++;
+                ValorVo = Math.round(precoDaVo * 1.15);
+
+                document.getElementById("Robux").innerHTML = Robux;
+                document.getElementById("precoDaVo").innerHTML = precoDaVo;
+                document.getElementById("ValorVo").innerHTML = ValorVo;
+                updaterobuxporhora();
+            }
+        }
+    </script>
+</body>
+</html>
